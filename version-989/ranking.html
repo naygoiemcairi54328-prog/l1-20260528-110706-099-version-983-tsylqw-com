@@ -1,0 +1,1984 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>热播榜-热门电影大全</title>
+    <meta name="description" content="热门电影大全热播榜页面，提供高关注电影、年度新片和多类型推荐内容入口。">
+    <meta name="keywords" content="热播榜,热门电影排行,电影推荐,热门电影大全,热门电影,电影大全,高清电影,精选影片,电影片库">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="site-logo" href="./index.html" aria-label="热门电影大全">
+                <span class="logo-symbol">▶</span>
+                <span>热门电影大全</span>
+            </a>
+            <nav class="desktop-nav" aria-label="主导航">
+                <a class="" href="./index.html">首页</a>
+                <a class="" href="./search.html">全部片库</a>
+                <a class="" href="./categories.html">分类</a>
+                <a class="active" href="./ranking.html">热播榜</a>
+                <a class="" href="./category-latest.html">年度新片</a>
+            </nav>
+            <button class="menu-toggle" type="button" aria-label="展开导航" data-menu-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" aria-label="移动导航" data-mobile-nav>
+            <a class="" href="./index.html">首页</a>
+            <a class="" href="./search.html">全部片库</a>
+            <a class="" href="./categories.html">分类</a>
+            <a class="active" href="./ranking.html">热播榜</a>
+            <a class="" href="./category-latest.html">年度新片</a>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="page-shell">
+                <div class="page-hero-card">
+                    <h1>热播榜</h1>
+                    <p>结合年份、类型热度与站内推荐关系整理的热播影片入口，适合快速发现高关注内容。</p>
+                </div>
+            </div>
+        </section>
+        <section class="page-section">
+            <div class="page-shell">
+                <div class="filter-panel" data-filter-area>
+                    <div class="filter-search">
+                        <label for="movieSearch">筛选热播内容</label>
+                        <input id="movieSearch" type="search" placeholder="输入片名、类型、地区或标签" data-filter-input>
+                    </div>
+                    <div class="filter-selects">
+                        <label>
+                            <span>年份</span>
+                            <select data-year-filter>
+                                <option value="all">全部年份</option>
+                            <option value="2031">2031</option>
+                            <option value="2030">2030</option>
+                            <option value="2029">2029</option>
+                            <option value="2028">2028</option>
+                            <option value="2027">2027</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1979">1979</option>
+                            <option value="1978">1978</option>
+                            <option value="1977">1977</option>
+                            <option value="1973">1973</option>
+                            <option value="1972">1972</option>
+                            <option value="1971">1971</option>
+                            <option value="1970">1970</option>
+                            <option value="1968">1968</option>
+                            <option value="1967">1967</option>
+                            <option value="1966">1966</option>
+                            <option value="1965">1965</option>
+                            <option value="1962">1962</option>
+                            <option value="1957">1957</option>
+                            <option value="1951">1951</option>
+                            <option value="1950">1950</option>
+                            <option value="1949">1949</option>
+                            <option value="1947">1947</option>
+                            <option value="1929">1929</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>频道</span>
+                            <select data-category-filter>
+                                <option value="all">全部频道</option>
+                            <option value="hot">热门精选</option>
+                            <option value="drama">剧情佳作</option>
+                            <option value="suspense">悬疑犯罪</option>
+                            <option value="romance">都市情感</option>
+                            <option value="comedy">喜剧生活</option>
+                            <option value="action">动作冒险</option>
+                            <option value="fantasy">奇幻科幻</option>
+                            <option value="animation">动画剧集</option>
+                            <option value="family">家庭年代</option>
+                            <option value="latest">年度新片</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="rank-list">
+                    <article class="rank-item" data-title="六连煞" data-keywords="悬疑, 犯罪, 古装 唐朝 连环杀人 风水 狄仁杰风 本格推理" data-year="2031" data-category="suspense">
+                        <a class="rank-number" href="./movie-1096.html">01</a>
+                        <a class="rank-thumb" href="./movie-1096.html">
+                            <img src="./46.jpg" alt="六连煞" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1096.html">六连煞</a></h3>
+                            <p>长安城连续六位高官在“六煞位”离奇死亡，大理寺卿发现凶手竟是根据长安城风水布局在杀人。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2031</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="未来城市 / 叛逆智慧" data-keywords="科幻 / 悬疑 人工智能 赛博朋克 觉醒 双男主" data-year="2030" data-category="fantasy">
+                        <a class="rank-number" href="./movie-1758.html">02</a>
+                        <a class="rank-thumb" href="./movie-1758.html">
+                            <img src="./108.jpg" alt="未来城市 / 叛逆智慧" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1758.html">未来城市 / 叛逆智慧</a></h3>
+                            <p>在全员佩戴情绪抑制器的未来，两个能感受情绪的“叛逆者”决定摧毁系统。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2030</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="变形金刚" data-keywords="动作, 科幻 重启 载具战争 地球原生 古文明" data-year="2029" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0872.html">03</a>
+                        <a class="rank-thumb" href="./movie-0872.html">
+                            <img src="./122.jpg" alt="变形金刚" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0872.html">变形金刚</a></h3>
+                            <p>变形金刚并非外星来客，而是地球古文明制造的终极兵器。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2029</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="米老鼠之猎犬" data-keywords="悬疑、黑色喜剧 拟人化 暗黑童话 侦探搭档 无声喜剧" data-year="2028" data-category="animation">
+                        <a class="rank-number" href="./movie-0281.html">04</a>
+                        <a class="rank-thumb" href="./movie-0281.html">
+                            <img src="./131.jpg" alt="米老鼠之猎犬" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0281.html">米老鼠之猎犬</a></h3>
+                            <p>米老鼠的猎犬搭档失踪了，他在一个所有动物都“会说话”的诡异小镇里嗅到了最不可能的真相。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2028</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="幽灵人种" data-keywords="科幻, 恐怖 基因编辑 隐形人 种族 身体恐怖" data-year="2028" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0345.html">05</a>
+                        <a class="rank-thumb" href="./movie-0345.html">
+                            <img src="./45.jpg" alt="幽灵人种" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0345.html">幽灵人种</a></h3>
+                            <p>科学家创造出只有特定基因才能看到的“幽灵人种”作为奴隶，直到一个普通女孩发现自己能看到他们。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2028</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="纳尼亚传奇：贾思潘王子" data-keywords="奇幻, 冒险 史诗 魔幻 王位之争" data-year="2028" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0472.html">06</a>
+                        <a class="rank-thumb" href="./movie-0472.html">
+                            <img src="./22.jpg" alt="纳尼亚传奇：贾思潘王子" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0472.html">纳尼亚传奇：贾思潘王子</a></h3>
+                            <p>时隔千年重返纳尼亚，四兄妹发现这里已被暴君统治，而最后一个王位继承人才十二岁。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2028</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="蜀山：新蜀山剑侠" data-keywords="奇幻 / 武侠 仙侠重启 视觉奇观 剑仙文化" data-year="2028" data-category="fantasy">
+                        <a class="rank-number" href="./movie-1003.html">07</a>
+                        <a class="rank-thumb" href="./movie-1003.html">
+                            <img src="./103.jpg" alt="蜀山：新蜀山剑侠" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1003.html">蜀山：新蜀山剑侠</a></h3>
+                            <p>血魔复活，但峨眉掌门却转世成了一个只会写代码的程序员。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2028</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="暴雨屋" data-keywords="恐怖 / 悬疑 暴风雪山庄 循环 心理攀比" data-year="2028" data-category="latest">
+                        <a class="rank-number" href="./movie-1437.html">08</a>
+                        <a class="rank-thumb" href="./movie-1437.html">
+                            <img src="./87.jpg" alt="暴雨屋" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1437.html">暴雨屋</a></h3>
+                            <p>七个人在一栋暴雨围困的豪宅里醒来，发现要想离开，就必须找出谁才是最虚伪的人。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2028</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="流云逝事" data-keywords="剧情, 家庭 亲情 时间流逝 和解 乡村 怀旧" data-year="2028" data-category="family">
+                        <a class="rank-number" href="./movie-1647.html">09</a>
+                        <a class="rank-thumb" href="./movie-1647.html">
+                            <img src="./147.jpg" alt="流云逝事" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1647.html">流云逝事</a></h3>
+                            <p>离家二十年的游子为父奔丧，却发现自己被卷入一场关于家族秘密的无声战争。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2028</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="诸神之战 3" data-keywords="动作, 奇幻 北欧神话 末日 神族 特效" data-year="2028" data-category="action">
+                        <a class="rank-number" href="./movie-1943.html">10</a>
+                        <a class="rank-thumb" href="./movie-1943.html">
+                            <img src="./143.jpg" alt="诸神之战 3" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1943.html">诸神之战 3</a></h3>
+                            <p>诸神黄昏之后，残存的神与人联手，对抗从地狱归来的亡灵军队。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2028</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="深太空时速9000公里" data-keywords="科幻 / 惊悚 超光速 时间膨胀 母女情 孤独 返老还童" data-year="2027" data-category="suspense">
+                        <a class="rank-number" href="./movie-0140.html">11</a>
+                        <a class="rank-thumb" href="./movie-0140.html">
+                            <img src="./140.jpg" alt="深太空时速9000公里" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0140.html">深太空时速9000公里</a></h3>
+                            <p>一艘深空探测器以9000公里/秒失控飞向宇宙深处，舱内七年，地球上已过七百年。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="阴牙人" data-keywords="恐怖, 奇幻 身体恐怖 女权 隐喻 cult" data-year="2027" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0335.html">12</a>
+                        <a class="rank-thumb" href="./movie-0335.html">
+                            <img src="./35.jpg" alt="阴牙人" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0335.html">阴牙人</a></h3>
+                            <p>少女发现自己阴道里长着锋利的牙齿，这成了她对抗所有不怀好意的男性的武器。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="痛苦的报酬" data-keywords="科幻 / 惊悚 赛博朋克 疼痛经济 贫富差距 黑镜风格" data-year="2027" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0462.html">13</a>
+                        <a class="rank-thumb" href="./movie-0462.html">
+                            <img src="./12.jpg" alt="痛苦的报酬" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0462.html">痛苦的报酬</a></h3>
+                            <p>在近未来，穷人靠出租痛觉神经替富人受罪赚钱，一个背负巨债的父亲接下了“死亡痛感”的终极订单。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="上帝粒子" data-keywords="科幻, 悬疑, 惊悚 物理灾难 封闭空间 认知混乱 烧脑 末日恐惧" data-year="2027" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0469.html">14</a>
+                        <a class="rank-thumb" href="./movie-0469.html">
+                            <img src="./19.jpg" alt="上帝粒子" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0469.html">上帝粒子</a></h3>
+                            <p>大型强子对撞机重启瞬间，研究站的科学家们发现，窗外的现实正在被一种新的物理法则所覆盖。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="国际机场" data-keywords="动作/惊悚/灾难 机场劫持 人质危机 限时拆弹 群像叙事" data-year="2027" data-category="suspense">
+                        <a class="rank-number" href="./movie-0562.html">15</a>
+                        <a class="rank-thumb" href="./movie-0562.html">
+                            <img src="./112.jpg" alt="国际机场" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0562.html">国际机场</a></h3>
+                            <p>全美最大的国际机场被恐怖分子接管，三架满载乘客的飞机无法降落，燃料只剩90分钟。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="波哥大" data-keywords="剧情/犯罪/惊悚 南美风情 移民梦碎 黑帮火并 生存法则" data-year="2027" data-category="drama">
+                        <a class="rank-number" href="./movie-0670.html">16</a>
+                        <a class="rank-thumb" href="./movie-0670.html">
+                            <img src="./70.jpg" alt="波哥大" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0670.html">波哥大</a></h3>
+                            <p>一个走投无路的韩国青年在波哥大黑市从搬运工做起，三年后成了地下钱庄的二号人物，却发现对手是亲哥哥。</p>
+                            <div class="rank-meta">
+                                <span>剧情佳作</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="转瞬即逝的天堂" data-keywords="爱情 / 科幻 时间旅行 悲剧美学 量子纠缠" data-year="2027" data-category="romance">
+                        <a class="rank-number" href="./movie-0713.html">17</a>
+                        <a class="rank-thumb" href="./movie-0713.html">
+                            <img src="./113.jpg" alt="转瞬即逝的天堂" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0713.html">转瞬即逝的天堂</a></h3>
+                            <p>一对恋人每次接吻，就会随机穿越到彼此人生中的某个时间点。</p>
+                            <div class="rank-meta">
+                                <span>都市情感</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="玛格丽特" data-keywords="剧情, 音乐 女权 歌剧 谎言 觉醒 悲喜剧" data-year="2027" data-category="hot">
+                        <a class="rank-number" href="./movie-0748.html">18</a>
+                        <a class="rank-thumb" href="./movie-0748.html">
+                            <img src="./148.jpg" alt="玛格丽特" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0748.html">玛格丽特</a></h3>
+                            <p>一位毫无唱歌天赋的贵族夫人，在丈夫和仆人的谎言中举办了一场盛大的个人独唱会，直到毒舌乐评人撕破了这个童话。</p>
+                            <div class="rank-meta">
+                                <span>热门精选</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="哈比王传奇" data-keywords="喜剧, 奇幻, 冒险 矮人族 废柴逆袭 种田 基建" data-year="2027" data-category="animation">
+                        <a class="rank-number" href="./movie-0761.html">19</a>
+                        <a class="rank-thumb" href="./movie-0761.html">
+                            <img src="./11.jpg" alt="哈比王传奇" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0761.html">哈比王传奇</a></h3>
+                            <p>一个精通现代土木工程的社畜，意外穿越到矮人王国，成为最矮的“哈比王”，带领子民搞基建，对抗巨龙。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="一个人的生命" data-keywords="科幻剧情 克隆 器官捐献 伦理" data-year="2027" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0799.html">20</a>
+                        <a class="rank-thumb" href="./movie-0799.html">
+                            <img src="./49.jpg" alt="一个人的生命" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0799.html">一个人的生命</a></h3>
+                            <p>为了救患绝症的女儿，一位父亲“合法”培育了自己的克隆体，但当克隆体也拥有了独立意识后，他必须决定“谁的生命更有价值”。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="鬼寺凶灵2" data-keywords="恐怖 / 喜剧 泰国恐怖片 寺庙 还魂 无厘头惊吓" data-year="2027" data-category="comedy">
+                        <a class="rank-number" href="./movie-0855.html">21</a>
+                        <a class="rank-thumb" href="./movie-0855.html">
+                            <img src="./105.jpg" alt="鬼寺凶灵2" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0855.html">鬼寺凶灵2</a></h3>
+                            <p>上一部结尾被超度的鬼，这次全回来了，而且学会了用手机。</p>
+                            <div class="rank-meta">
+                                <span>喜剧生活</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="风流十七年" data-keywords="爱情、年代 三角恋 时代变迁 BE美学 情感纠葛" data-year="2027" data-category="family">
+                        <a class="rank-number" href="./movie-0878.html">22</a>
+                        <a class="rank-thumb" href="./movie-0878.html">
+                            <img src="./128.jpg" alt="风流十七年" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0878.html">风流十七年</a></h3>
+                            <p>一对恋人在17年里分合七次，每一次重逢都以为对方是陌生人，却总在同一个雨天爱上彼此。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="陪她一会儿" data-keywords="剧情 / 家庭 临终关怀 父女关系 单场景" data-year="2027" data-category="family">
+                        <a class="rank-number" href="./movie-1087.html">23</a>
+                        <a class="rank-thumb" href="./movie-1087.html">
+                            <img src="./37.jpg" alt="陪她一会儿" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1087.html">陪她一会儿</a></h3>
+                            <p>一个叛逆少女被父亲“骗”进临终病房当义工，却在这里学会了如何陪伴患癌的父亲。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="凹凸" data-keywords="剧情/悬疑/心理 双胞胎互换 校园霸凌 身份错位 扭曲母爱" data-year="2027" data-category="suspense">
+                        <a class="rank-number" href="./movie-1138.html">24</a>
+                        <a class="rank-thumb" href="./movie-1138.html">
+                            <img src="./88.jpg" alt="凹凸" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1138.html">凹凸</a></h3>
+                            <p>双胞胎姐妹中“丑”的那个意外身亡，“美”的那个被迫扮演妹妹，却发现自己正在杀死真实的自己。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="神鬼奇兵：失落的宝藏" data-keywords="动作 / 冒险 / 奇幻 寻宝 古代文明 神秘学 动作场面" data-year="2027" data-category="action">
+                        <a class="rank-number" href="./movie-1148.html">25</a>
+                        <a class="rank-thumb" href="./movie-1148.html">
+                            <img src="./98.jpg" alt="神鬼奇兵：失落的宝藏" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1148.html">神鬼奇兵：失落的宝藏</a></h3>
+                            <p>一张羊皮卷指向成吉思汗失落在地中海的海上陵墓，三路人马同时出发，只有一人能活着带回宝藏。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="直捣火星" data-keywords="动作 / 科幻 火星 硬核 营救" data-year="2027" data-category="latest">
+                        <a class="rank-number" href="./movie-1485.html">26</a>
+                        <a class="rank-thumb" href="./movie-1485.html">
+                            <img src="./135.jpg" alt="直捣火星" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1485.html">直捣火星</a></h3>
+                            <p>火星殖民基地突然失联，一支由退役老兵和混混组成的杂牌军被送上火星，任务是活着带回可能已经叛变的指挥官。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="五星大饭店" data-keywords="剧情 / 商战 / 爱情 酒店业 职场 商业谍战 服务美学 理想主义" data-year="2027" data-category="romance">
+                        <a class="rank-number" href="./movie-1711.html">27</a>
+                        <a class="rank-thumb" href="./movie-1711.html">
+                            <img src="./61.jpg" alt="五星大饭店" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1711.html">五星大饭店</a></h3>
+                            <p>落魄的前米其林餐厅经理潜入濒临倒闭的五星酒店，却发现这里的“烂”全部是骗保的阴谋。</p>
+                            <div class="rank-meta">
+                                <span>都市情感</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="九凤家的锦鲤喵殿下" data-keywords="古装 / 奇幻 / 喜剧 萌宠 锦鲤 甜宠 王爷变猫" data-year="2027" data-category="fantasy">
+                        <a class="rank-number" href="./movie-1734.html">28</a>
+                        <a class="rank-thumb" href="./movie-1734.html">
+                            <img src="./84.jpg" alt="九凤家的锦鲤喵殿下" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1734.html">九凤家的锦鲤喵殿下</a></h3>
+                            <p>高冷王爷被诅咒变成一只布偶猫，被仇家之女捡回家当宠物，每天被迫营业撒娇才能活命。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="恶灵古堡：最终章" data-keywords="动作 / 科幻 / 恐怖 游戏改编 丧尸 大结局 末世" data-year="2027" data-category="action">
+                        <a class="rank-number" href="./movie-1843.html">29</a>
+                        <a class="rank-thumb" href="./movie-1843.html">
+                            <img src="./43.jpg" alt="恶灵古堡：最终章" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1843.html">恶灵古堡：最终章</a></h3>
+                            <p>爱丽丝孤身潜入浣熊市地下遗迹，发现一切的源头并非病毒泄露，而是一场持续了二十年的AI社会模拟实验。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="奇幻游乐园" data-keywords="冒险, 奇幻 主题乐园 异世界 兄妹情 想象力" data-year="2027" data-category="fantasy">
+                        <a class="rank-number" href="./movie-1875.html">30</a>
+                        <a class="rank-thumb" href="./movie-1875.html">
+                            <img src="./75.jpg" alt="奇幻游乐园" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1875.html">奇幻游乐园</a></h3>
+                            <p>哥哥用轮椅推着妹妹闯进一座废弃游乐园，却发现每个设施都通往一个真实的幻想世界。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="一路不顺风" data-keywords="喜剧 / 公路 / 家庭 春运 拼车 岳父女婿 搞笑车祸 荒诞温情" data-year="2027" data-category="comedy">
+                        <a class="rank-number" href="./movie-1877.html">31</a>
+                        <a class="rank-thumb" href="./movie-1877.html">
+                            <img src="./77.jpg" alt="一路不顺风" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1877.html">一路不顺风</a></h3>
+                            <p>春运期间，准女婿开黑车接岳父返乡，一千公里路程，两人经历了十六次不可思议的倒霉事。</p>
+                            <div class="rank-meta">
+                                <span>喜剧生活</span>
+                                <span>2027</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="布偶历险记：全面追缉" data-keywords="喜剧 / 冒险 / 家庭 布偶归来 黑色幽默 解构经典 跨次元 合家欢" data-year="2026" data-category="latest">
+                        <a class="rank-number" href="./movie-0035.html">32</a>
+                        <a class="rank-thumb" href="./movie-0035.html">
+                            <img src="./35.jpg" alt="布偶历险记：全面追缉" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0035.html">布偶历险记：全面追缉</a></h3>
+                            <p>布偶家族被诬陷盗窃国家机密，他们必须在真实世界里找到真凶，否则就要被“永远注销”。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="系统" data-keywords="科幻悬疑 游戏化 现实入侵 高概念 限时任务" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-0066.html">33</a>
+                        <a class="rank-thumb" href="./movie-0066.html">
+                            <img src="./66.jpg" alt="系统" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0066.html">系统</a></h3>
+                            <p>一款名为“系统”的手机app突然入侵现实，给所有人发布荒诞任务，不完成就会被“删除”。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="古墓入侵者" data-keywords="动作， 冒险， 奇幻 盗墓 寻宝 远古科技 秘境探险 致命机关" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0093.html">34</a>
+                        <a class="rank-thumb" href="./movie-0093.html">
+                            <img src="./93.jpg" alt="古墓入侵者" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0093.html">古墓入侵者</a></h3>
+                            <p>为了寻找能治愈绝症的圣物，一群盗墓者进入了亚马逊丛林中从未被发现的印加金字塔。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="嘿！你大事很妙" data-keywords="喜剧 / 奇幻 / 青春 穿越 母女 和解 90年代" data-year="2026" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0135.html">35</a>
+                        <a class="rank-thumb" href="./movie-0135.html">
+                            <img src="./135.jpg" alt="嘿！你大事很妙" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0135.html">嘿！你大事很妙</a></h3>
+                            <p>叛逆少女意外穿越到1998年，遇到了还在上高中的“少女版”妈妈，却发现妈妈当年比她还叛逆。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="致命点击" data-keywords="悬疑、犯罪、科技惊悚 数字犯罪 网红绑架 舆论反转" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-0194.html">36</a>
+                        <a class="rank-thumb" href="./movie-0194.html">
+                            <img src="./44.jpg" alt="致命点击" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0194.html">致命点击</a></h3>
+                            <p>一个拥有千万粉丝的生活方式博主被绑架，绑匪提出的要求不是赎金，而是“让她的点赞数清零”。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="巴山红浪" data-keywords="剧情 / 历史 三线建设 知青 群山" data-year="2026" data-category="family">
+                        <a class="rank-number" href="./movie-0217.html">37</a>
+                        <a class="rank-thumb" href="./movie-0217.html">
+                            <img src="./67.jpg" alt="巴山红浪" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0217.html">巴山红浪</a></h3>
+                            <p>1960年代，三位来自不同城市的青年在三线工厂的深山里，用十年时间挖出了一条不可能的路。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="慢性" data-keywords="剧情 / 家庭 文艺 临终关怀 父子关系 生活流" data-year="2026" data-category="latest">
+                        <a class="rank-number" href="./movie-0231.html">38</a>
+                        <a class="rank-thumb" href="./movie-0231.html">
+                            <img src="./81.jpg" alt="慢性" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0231.html">慢性</a></h3>
+                            <p>一个永远在拖延的剧作家，被迫回家照顾患有“慢病”的父亲，在漫长的照护中，两人的时间感逐渐错位。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="野兽男孩的故事" data-keywords="剧情 / 动作 / 犯罪 黑帮 卧底 兄弟情 悲剧" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0259.html">39</a>
+                        <a class="rank-thumb" href="./movie-0259.html">
+                            <img src="./109.jpg" alt="野兽男孩的故事" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0259.html">野兽男孩的故事</a></h3>
+                            <p>一个在暴力中长大的孤儿成为黑帮老大的养子，却在一次任务中爱上了警察的卧底女儿，他的忠诚与爱情开始撕裂。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="急诊男女泰版" data-keywords="剧情、爱情、医疗 泰剧 医院风云 破镜重圆 职场竞争" data-year="2026" data-category="romance">
+                        <a class="rank-number" href="./movie-0262.html">40</a>
+                        <a class="rank-thumb" href="./movie-0262.html">
+                            <img src="./112.jpg" alt="急诊男女泰版" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0262.html">急诊男女泰版</a></h3>
+                            <p>离婚五年的前夫妻成为急诊室搭档，在抢救生命的同时，也试图抢救早已死去的爱情。</p>
+                            <div class="rank-meta">
+                                <span>都市情感</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="问天" data-keywords="科幻 / 历史 / 剧情 万户 古代航天 执念 家国情怀 硬核古装" data-year="2026" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0284.html">41</a>
+                        <a class="rank-thumb" href="./movie-0284.html">
+                            <img src="./134.jpg" alt="问天" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0284.html">问天</a></h3>
+                            <p>明朝万历年间，被称为“万户”的士大夫陶成道，为了证明“人类也能飞向星空”，用47枚火箭和一只风筝，献出了生命，也献出了一个文明千年的倔强。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="轩辕大帝" data-keywords="历史， 史诗， 动作 部落战争 神话起源 帝王崛起" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0361.html">42</a>
+                        <a class="rank-thumb" href="./movie-0361.html">
+                            <img src="./61.jpg" alt="轩辕大帝" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0361.html">轩辕大帝</a></h3>
+                            <p>五千年前的部落混战中，一名普通铁匠意外继承了上古神力，被迫踏上统一各部落的征途。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="东方秃鹰" data-keywords="动作 / 战争 / 冒险 特种部队 越战 硬核动作" data-year="2026" data-category="latest">
+                        <a class="rank-number" href="./movie-0370.html">43</a>
+                        <a class="rank-thumb" href="./movie-0370.html">
+                            <img src="./70.jpg" alt="东方秃鹰" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0370.html">东方秃鹰</a></h3>
+                            <p>1987年，一群被遗忘的华裔退伍军人重装上阵，潜入越南腹地，执行一项不可能的秘密炸毁任务。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="第19个妻子" data-keywords="悬疑、犯罪、宗教、剧情 一夫多妻 邪教 连环杀人 女性觉醒" data-year="2026" data-category="romance">
+                        <a class="rank-number" href="./movie-0381.html">44</a>
+                        <a class="rank-thumb" href="./movie-0381.html">
+                            <img src="./81.jpg" alt="第19个妻子" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0381.html">第19个妻子</a></h3>
+                            <p>在一个一夫多妻制的社区里，第19个妻子被杀，第1个妻子回来查案。</p>
+                            <div class="rank-meta">
+                                <span>都市情感</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="飞驰吧！少年第二季" data-keywords="真人秀剧情片 / 热血 / 青春 赛车 竞技 成长" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-0416.html">45</a>
+                        <a class="rank-thumb" href="./movie-0416.html">
+                            <img src="./116.jpg" alt="飞驰吧！少年第二季" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0416.html">飞驰吧！少年第二季</a></h3>
+                            <p>天才车手因伤退役成为驾校教练，却意外从学员中发现一个能靠“听”引擎换挡的神奇少年。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="野餐会" data-keywords="悬疑, 犯罪 同学会 荒野 复仇 全员恶人 暴风雪山庄" data-year="2026" data-category="suspense">
+                        <a class="rank-number" href="./movie-0426.html">46</a>
+                        <a class="rank-thumb" href="./movie-0426.html">
+                            <img src="./126.jpg" alt="野餐会" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0426.html">野餐会</a></h3>
+                            <p>十年前霸凌事件的受害者去世后，十位同学受邀参加一场荒岛野餐会，却发现每道菜都对应着他们当年的罪证。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="杀人者的购物目录" data-keywords="黑色喜剧/犯罪 邻里温情 推理 日常感" data-year="2026" data-category="suspense">
+                        <a class="rank-number" href="./movie-0498.html">47</a>
+                        <a class="rank-thumb" href="./movie-0498.html">
+                            <img src="./48.jpg" alt="杀人者的购物目录" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0498.html">杀人者的购物目录</a></h3>
+                            <p>一个总是打折促销的廉价超市里，商品条形码下隐藏着连环杀人案的线索。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="大逃脱第四季" data-keywords="冒险 / 悬疑 / 真人秀 密室逃脱 解密 团队合作 实景" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0608.html">48</a>
+                        <a class="rank-thumb" href="./movie-0608.html">
+                            <img src="./8.jpg" alt="大逃脱第四季" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0608.html">大逃脱第四季</a></h3>
+                            <p>这一季，六位玩家被扔进了废弃的生化危机主题乐园，必须 24 小时内逃出。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="霹雳皇龙纪" data-keywords="武侠 / 奇幻 / 布袋戏 布袋戏 皇权争斗 神魔对决" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0618.html">49</a>
+                        <a class="rank-thumb" href="./movie-0618.html">
+                            <img src="./18.jpg" alt="霹雳皇龙纪" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0618.html">霹雳皇龙纪</a></h3>
+                            <p>皇龙现世，三教倾危，一个失忆的刀客发现自己就是被封印的暴君皇龙。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="变形计 我的变形日记" data-keywords="科幻/伦理 身体互换 贫富差距 反思 黑色幽默" data-year="2026" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0648.html">50</a>
+                        <a class="rank-thumb" href="./movie-0648.html">
+                            <img src="./48.jpg" alt="变形计 我的变形日记" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0648.html">变形计 我的变形日记</a></h3>
+                            <p>节目组不再让农村和城市孩子互换生活，而是让他们直接互换身体，体验“真正”的人生。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="侍酒令" data-keywords="奇幻, 剧情, 美食 葡萄酒 治愈 单元剧 品酒" data-year="2026" data-category="hot">
+                        <a class="rank-number" href="./movie-0657.html">51</a>
+                        <a class="rank-thumb" href="./movie-0657.html">
+                            <img src="./57.jpg" alt="侍酒令" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0657.html">侍酒令</a></h3>
+                            <p>百年酒庄的地下酒窖里沉睡着一位“酒灵”，唯有说出每瓶酒背后的故事，才能唤醒他。</p>
+                            <div class="rank-meta">
+                                <span>热门精选</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="风流总统" data-keywords="剧情 / 传记 / 黑色幽默 政治讽刺 权力游戏 丑闻 人性" data-year="2026" data-category="drama">
+                        <a class="rank-number" href="./movie-0725.html">52</a>
+                        <a class="rank-thumb" href="./movie-0725.html">
+                            <img src="./125.jpg" alt="风流总统" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0725.html">风流总统</a></h3>
+                            <p>一位魅力无限的总统在白宫内开启双重人生，治国与偷情之间，谎言是唯一盟友。</p>
+                            <div class="rank-meta">
+                                <span>剧情佳作</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="巨兽来袭3" data-keywords="动作、科幻、灾难 怪兽 机甲 末日 特效大片" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0729.html">53</a>
+                        <a class="rank-thumb" href="./movie-0729.html">
+                            <img src="./129.jpg" alt="巨兽来袭3" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0729.html">巨兽来袭3</a></h3>
+                            <p>当全球巨型机甲都沦陷后，退役飞行员必须驾驶一台故障频发的采矿机拯救纽约。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="罗宾汉复仇记" data-keywords="动作， 悬疑， 历史 黑暗英雄 反抗资本 阶级对立" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0735.html">54</a>
+                        <a class="rank-thumb" href="./movie-0735.html">
+                            <img src="./135.jpg" alt="罗宾汉复仇记" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0735.html">罗宾汉复仇记</a></h3>
+                            <p>现代版罗宾汉，他不是劫富济贫，而是劫持富人的DNA，将他们身体里的罕见病基因植入自己体内，倒逼富人缴纳“健康税”。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="野性哥伦比亚" data-keywords="剧情, 惊悚, 冒险 魔幻现实主义 毒枭 丛林探险 家族仇杀" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0806.html">55</a>
+                        <a class="rank-thumb" href="./movie-0806.html">
+                            <img src="./56.jpg" alt="野性哥伦比亚" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0806.html">野性哥伦比亚</a></h3>
+                            <p>一个被城市“驯化”的植物学家，回到哥伦比亚丛林寻找失踪的哥哥，却发现自己体内流淌着足以撼动整个贩毒集团的“野性”基因。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="梦回玛丽莲" data-keywords="剧情 / 传记 / 奇幻 玛丽莲·梦露 穿越迷影 女性凝视 好莱坞黑幕 自我救赎" data-year="2026" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0850.html">56</a>
+                        <a class="rank-thumb" href="./movie-0850.html">
+                            <img src="./100.jpg" alt="梦回玛丽莲" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0850.html">梦回玛丽莲</a></h3>
+                            <p>2026年过气女星梦到自己是玛丽莲·梦露转世，她决定用直播揭开好莱坞旧案。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="空海" data-keywords="历史 / 奇幻 / 冒险 唐代 佛教 密宗 文化探秘" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-0899.html">57</a>
+                        <a class="rank-thumb" href="./movie-0899.html">
+                            <img src="./149.jpg" alt="空海" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0899.html">空海</a></h3>
+                            <p>日本遣唐使空海，在从大唐返回日本的最后一艘船上，发现船上每个人都已被一种能篡改记忆的妖物寄生。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="龙凤争挂帅" data-keywords="动作 / 喜剧 / 古装 粤剧改编 女将 反串 动作喜剧 港味" data-year="2026" data-category="latest">
+                        <a class="rank-number" href="./movie-1000.html">58</a>
+                        <a class="rank-thumb" href="./movie-1000.html">
+                            <img src="./100.jpg" alt="龙凤争挂帅" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1000.html">龙凤争挂帅</a></h3>
+                            <p>古代女将军为抢回帅印，不得不和男扮女装的戏子搭档，上演一出啼笑皆非的夺帅大戏。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="少林传人" data-keywords="动作, 古装, 剧情 少林寺 真功夫 师徒情 家国仇恨" data-year="2026" data-category="drama">
+                        <a class="rank-number" href="./movie-1059.html">59</a>
+                        <a class="rank-thumb" href="./movie-1059.html">
+                            <img src="./9.jpg" alt="少林传人" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1059.html">少林传人</a></h3>
+                            <p>清末，少林寺遭劫，老方丈将武学真经传给了一个目不识丁的火工头陀，他必须保护经书不被洋人和清廷夺走。</p>
+                            <div class="rank-meta">
+                                <span>剧情佳作</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="示意停车" data-keywords="剧情 / 惊悚 公路片 单亲父亲 犯罪 道德抉择 生存" data-year="2026" data-category="drama">
+                        <a class="rank-number" href="./movie-1065.html">60</a>
+                        <a class="rank-thumb" href="./movie-1065.html">
+                            <img src="./15.jpg" alt="示意停车" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1065.html">示意停车</a></h3>
+                            <p>单亲爸爸为给女儿凑手术费，成为一名“示意停车”劫匪，却抢到了自己老板的贪污账本。</p>
+                            <div class="rank-meta">
+                                <span>剧情佳作</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="战北国" data-keywords="历史, 战争, 动作 南北朝 骑兵战 古装 孤城" data-year="2026" data-category="family">
+                        <a class="rank-number" href="./movie-1076.html">61</a>
+                        <a class="rank-thumb" href="./movie-1076.html">
+                            <img src="./26.jpg" alt="战北国" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1076.html">战北国</a></h3>
+                            <p>北魏太武帝时期，五百残兵困守一座被冰封的北方小城，面对数万柔然骑兵，他们唯一的武器是酷寒。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="金刚斗恐龙" data-keywords="动作/科幻 怪兽 特效 远古 大战" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-1107.html">62</a>
+                        <a class="rank-thumb" href="./movie-1107.html">
+                            <img src="./57.jpg" alt="金刚斗恐龙" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1107.html">金刚斗恐龙</a></h3>
+                            <p>骷髅岛上的金刚遇到了时空裂缝里的霸王龙，为了争夺史前地球的霸主，地核都被打穿了。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="腹中甜" data-keywords="剧情、奇幻、女性 饥饿隐喻 身体恐怖 母女关系 南美魔幻现实主义" data-year="2026" data-category="romance">
+                        <a class="rank-number" href="./movie-1126.html">63</a>
+                        <a class="rank-thumb" href="./movie-1126.html">
+                            <img src="./76.jpg" alt="腹中甜" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1126.html">腹中甜</a></h3>
+                            <p>母亲去世后，女儿发现自己腹腔里长出了一棵会结出记忆果实的无花果树，而摘下的果子必须吃掉。</p>
+                            <div class="rank-meta">
+                                <span>都市情感</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="上帝的私生子" data-keywords="奇幻 / 剧情 宗教神话 私生子逆袭 现代社会 黑色幽默" data-year="2026" data-category="suspense">
+                        <a class="rank-number" href="./movie-1170.html">64</a>
+                        <a class="rank-thumb" href="./movie-1170.html">
+                            <img src="./120.jpg" alt="上帝的私生子" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1170.html">上帝的私生子</a></h3>
+                            <p>一天，一个纽约流浪汉收到通知：“你是上帝与人类的私生子，现在有六个同父异母的‘神二代’想杀你。”</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="戴夫银行2:大耳窿" data-keywords="犯罪, 动作 高利贷 卧底 黑吃黑" data-year="2026" data-category="suspense">
+                        <a class="rank-number" href="./movie-1199.html">65</a>
+                        <a class="rank-thumb" href="./movie-1199.html">
+                            <img src="./149.jpg" alt="戴夫银行2:大耳窿" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1199.html">戴夫银行2:大耳窿</a></h3>
+                            <p>前银行家戴夫为救妹妹重操旧业，卧底地下钱庄却发现自己成了头号“大耳窿”。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="白色强人2粤语" data-keywords="剧情, 医疗, 职场 医院政治 急诊室 医疗改革 原班人马" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-1289.html">66</a>
+                        <a class="rank-thumb" href="./movie-1289.html">
+                            <img src="./89.jpg" alt="白色强人2粤语" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1289.html">白色强人2粤语</a></h3>
+                            <p>明成北医院再次面临医疗改革的狂风暴雨，而这一次，内部权力斗争直接导致了重大医疗事故，所有人都可能坐牢。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="奇妙博物馆" data-keywords="奇幻 / 剧情 / 悬疑 / 单元剧 博物馆 文物成精 单元剧 治愈悬疑" data-year="2026" data-category="suspense">
+                        <a class="rank-number" href="./movie-1366.html">67</a>
+                        <a class="rank-thumb" href="./movie-1366.html">
+                            <img src="./16.jpg" alt="奇妙博物馆" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1366.html">奇妙博物馆</a></h3>
+                            <p>一家经营不善的私立博物馆，每晚闭馆后藏品就会复活，向值夜保安讲述自己真正的历史。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="危险年华" data-keywords="犯罪, 剧情 青春 黑帮 残酷 真实改编 港产片" data-year="2026" data-category="latest">
+                        <a class="rank-number" href="./movie-1408.html">68</a>
+                        <a class="rank-thumb" href="./movie-1408.html">
+                            <img src="./58.jpg" alt="危险年华" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1408.html">危险年华</a></h3>
+                            <p>1984年，四个底层少年以为加入社团就能出人头地，最终却成为连名字都没有的山鸡哥背景板。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="丢失的勋章：比利石的冒险" data-keywords="冒险, 奇幻, 家庭 寻宝 蒸汽朋克 儿童 幽默 成长" data-year="2026" data-category="fantasy">
+                        <a class="rank-number" href="./movie-1436.html">69</a>
+                        <a class="rank-thumb" href="./movie-1436.html">
+                            <img src="./86.jpg" alt="丢失的勋章：比利石的冒险" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1436.html">丢失的勋章：比利石的冒险</a></h3>
+                            <p>一心想当骑士的瘦弱男孩，必须找回曾祖父丢失的勋章，才能拯救即将被拆除的老钟楼。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="永不回头" data-keywords="剧情 / 犯罪 救赎 复仇 公路 底层 写实" data-year="2026" data-category="action">
+                        <a class="rank-number" href="./movie-1451.html">70</a>
+                        <a class="rank-thumb" href="./movie-1451.html">
+                            <img src="./101.jpg" alt="永不回头" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1451.html">永不回头</a></h3>
+                            <p>刑满释放的老陈踏上回乡路，却发现当年陷害他的人正等着他自投罗网。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="奇异三人恋" data-keywords="爱情、剧情、伦理 三人行 开放式关系 情感实验" data-year="2026" data-category="latest">
+                        <a class="rank-number" href="./movie-1495.html">71</a>
+                        <a class="rank-thumb" href="./movie-1495.html">
+                            <img src="./145.jpg" alt="奇异三人恋" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1495.html">奇异三人恋</a></h3>
+                            <p>一对七年之痒的夫妻决定引入第三个人来挽救婚姻，结果每个人都爱上了错误的对象。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="我们是恶魔" data-keywords="犯罪 / 悬疑 邪教 卧底 复仇 反转 双男主" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-1534.html">72</a>
+                        <a class="rank-thumb" href="./movie-1534.html">
+                            <img src="./34.jpg" alt="我们是恶魔" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1534.html">我们是恶魔</a></h3>
+                            <p>一名被邪教害死全家的警察卧底进入教团，却发现教主比他更像一个正义的“恶魔”。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="七河国" data-keywords="历史 / 战争 / 史诗 丝绸之路 游牧文明 汗国 权力游戏 多语种" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-1555.html">73</a>
+                        <a class="rank-thumb" href="./movie-1555.html">
+                            <img src="./55.jpg" alt="七河国" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1555.html">七河国</a></h3>
+                            <p>七条大河滋养的土地上，三个汗国、两个帝国和一个商帮，为争夺水源与丝路控制权展开了长达六十年的博弈。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="亚历山大大帝的失落陵墓" data-keywords="冒险， 历史， 悬疑 考古探险 古埃及诅咒 历史解密 双时间线" data-year="2026" data-category="latest">
+                        <a class="rank-number" href="./movie-1572.html">74</a>
+                        <a class="rank-thumb" href="./movie-1572.html">
+                            <img src="./72.jpg" alt="亚历山大大帝的失落陵墓" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1572.html">亚历山大大帝的失落陵墓</a></h3>
+                            <p>一支国际考古队在亚历山大港地下发现疑似陵墓，却在打开石门的一刻，听到了两千年前的心跳声。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="桃源荡娃" data-keywords="奇幻 / 喜剧 / 古装 穿越 桃花源 熊孩子 古代乡村 教育冲突" data-year="2026" data-category="fantasy">
+                        <a class="rank-number" href="./movie-1573.html">75</a>
+                        <a class="rank-thumb" href="./movie-1573.html">
+                            <img src="./73.jpg" alt="桃源荡娃" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1573.html">桃源荡娃</a></h3>
+                            <p>现代“虎妈”带着她的三个熊孩子意外穿越进陶渊明笔下的桃花源，她要把这里变成“高考集训营”。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="暗黑" data-keywords="科幻 / 悬疑 / 哲学 洞穴 核废料 时间循环 家族宿命" data-year="2026" data-category="fantasy">
+                        <a class="rank-number" href="./movie-1594.html">76</a>
+                        <a class="rank-thumb" href="./movie-1594.html">
+                            <img src="./94.jpg" alt="暗黑" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1594.html">暗黑</a></h3>
+                            <p>小镇地下的核废料泄漏，导致时间并非循环，而是像树枝一样分叉、交缠，每一个选择都创造新的地狱。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="小学风云第二季" data-keywords="喜剧, 教育 职场 伪纪录片 社会讽刺 教师" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-1598.html">77</a>
+                        <a class="rank-thumb" href="./movie-1598.html">
+                            <img src="./98.jpg" alt="小学风云第二季" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1598.html">小学风云第二季</a></h3>
+                            <p>资金被砍、家长奇葩，这群倒霉老师刚解决学区危机，新来的AI教学系统又要把他们全员“优化”了。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="天堂2" data-keywords="科幻、悬疑、惊悚 续集 AI 虚拟世界 记忆 反乌托邦" data-year="2026" data-category="fantasy">
+                        <a class="rank-number" href="./movie-1610.html">78</a>
+                        <a class="rank-thumb" href="./movie-1610.html">
+                            <img src="./110.jpg" alt="天堂2" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1610.html">天堂2</a></h3>
+                            <p>前作中逃出“天堂”模拟世界的主角回归现实三年后，发现现实世界本身也是一个更巨大的模拟，而上一层的“自己”正在拔电源。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="唐探1900" data-keywords="悬疑 / 动作 / 喜剧 民国 唐人街 侦探 蒸汽朋克" data-year="2026" data-category="comedy">
+                        <a class="rank-number" href="./movie-1670.html">79</a>
+                        <a class="rank-thumb" href="./movie-1670.html">
+                            <img src="./20.jpg" alt="唐探1900" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1670.html">唐探1900</a></h3>
+                            <p>1900年，旧金山唐人街神童遭遇离奇“开膛案”，他唯一的盟友竟是一个只会用拳头说话的华人劳工。</p>
+                            <div class="rank-meta">
+                                <span>喜剧生活</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="前路粤语" data-keywords="剧情 粤语 底层 兄弟情 街头 写实" data-year="2026" data-category="hot">
+                        <a class="rank-number" href="./movie-1684.html">80</a>
+                        <a class="rank-thumb" href="./movie-1684.html">
+                            <img src="./34.jpg" alt="前路粤语" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1684.html">前路粤语</a></h3>
+                            <p>两个欠债的落魄兄弟，捡到一部藏着黑帮洗钱密码的旧手机。</p>
+                            <div class="rank-meta">
+                                <span>热门精选</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="被困在外" data-keywords="恐怖 / 科幻 / 生存 外星 孤立 密室 心理恐惧 变形" data-year="2026" data-category="hot">
+                        <a class="rank-number" href="./movie-1709.html">81</a>
+                        <a class="rank-thumb" href="./movie-1709.html">
+                            <img src="./59.jpg" alt="被困在外" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1709.html">被困在外</a></h3>
+                            <p>六名宇航员被困外星洞穴，他们中发现其中一人已经被寄生体完全替换了大脑。</p>
+                            <div class="rank-meta">
+                                <span>热门精选</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="小斧子" data-keywords="剧情， 家庭， 青春 成长 木雕 父子关系" data-year="2026" data-category="drama">
+                        <a class="rank-number" href="./movie-1848.html">82</a>
+                        <a class="rank-thumb" href="./movie-1848.html">
+                            <img src="./48.jpg" alt="小斧子" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1848.html">小斧子</a></h3>
+                            <p>一个叛逆少年在帮爷爷修复一把破旧小斧子时，意外发现家族三代人沉默的爱与伤。</p>
+                            <div class="rank-meta">
+                                <span>剧情佳作</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="不可思议恋曲" data-keywords="奇幻爱情 钢琴 时空 失忆 治愈 甜虐" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-1893.html">83</a>
+                        <a class="rank-thumb" href="./movie-1893.html">
+                            <img src="./93.jpg" alt="不可思议恋曲" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1893.html">不可思议恋曲</a></h3>
+                            <p>钢琴家在一次演出后失忆，醒来后身边多了一个声称是他妻子的陌生女人，而他手机里只有一首从未发表过的曲子。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="红粉侦探" data-keywords="悬疑 / 喜剧 / 动作 大女主 民国旗袍 女扮男装 探案 轻喜" data-year="2026" data-category="comedy">
+                        <a class="rank-number" href="./movie-1904.html">84</a>
+                        <a class="rank-thumb" href="./movie-1904.html">
+                            <img src="./104.jpg" alt="红粉侦探" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1904.html">红粉侦探</a></h3>
+                            <p>民国上海滩头号交际花其实是私家侦探，她靠着“打听八卦”破获了多起大案，直到她接了一单生意：调查自己未婚夫。</p>
+                            <div class="rank-meta">
+                                <span>喜剧生活</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="顽童182" data-keywords="青春, 喜剧 高中生 机车 热血 台湾乡土味" data-year="2026" data-category="romance">
+                        <a class="rank-number" href="./movie-1910.html">85</a>
+                        <a class="rank-thumb" href="./movie-1910.html">
+                            <img src="./110.jpg" alt="顽童182" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1910.html">顽童182</a></h3>
+                            <p>台中一所高职汽修科的六个“吊车尾”学生，为了不让自己的实习工坊被拆，决定造出一辆能赢过贵族学校的赛车。</p>
+                            <div class="rank-meta">
+                                <span>都市情感</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="名校风暴第八季" data-keywords="悬疑、青春、犯罪 贵族学校 阶级冲突 终极谜团" data-year="2026" data-category="animation">
+                        <a class="rank-number" href="./movie-1925.html">86</a>
+                        <a class="rank-thumb" href="./movie-1925.html">
+                            <img src="./125.jpg" alt="名校风暴第八季" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1925.html">名校风暴第八季</a></h3>
+                            <p>一栋新的教学楼在施工时挖出一具十年前的白骨，拉斯恩西纳斯真正的“第一个秘密”即将揭晓。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="中途岛" data-keywords="战争 海战 历史改编 航母对决 密码破译 群像戏" data-year="2026" data-category="family">
+                        <a class="rank-number" href="./movie-1953.html">87</a>
+                        <a class="rank-thumb" href="./movie-1953.html">
+                            <img src="./3.jpg" alt="中途岛" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1953.html">中途岛</a></h3>
+                            <p>聚焦中途岛海战前后，从情报员到飞行员，每一个普通士兵如何改写了历史。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="天降美囍" data-keywords="喜剧 奇幻 彩礼 婚姻 爆笑" data-year="2026" data-category="comedy">
+                        <a class="rank-number" href="./movie-1990.html">88</a>
+                        <a class="rank-thumb" href="./movie-1990.html">
+                            <img src="./40.jpg" alt="天降美囍" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1990.html">天降美囍</a></h3>
+                            <p>穷小子意外继承了神秘遗产，条件是必须在七天内让一位素未谋面的“天女”心甘情愿嫁给他。</p>
+                            <div class="rank-meta">
+                                <span>喜剧生活</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="惊魂摄魄" data-keywords="恐怖 / 心理 邪典 录像带 诅咒 实验电影" data-year="2026" data-category="hot">
+                        <a class="rank-number" href="./movie-1994.html">89</a>
+                        <a class="rank-thumb" href="./movie-1994.html">
+                            <img src="./44.jpg" alt="惊魂摄魄" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-1994.html">惊魂摄魄</a></h3>
+                            <p>一家电影修复师接到的最后一份工作，是修复一卷会杀死观众的胶片。</p>
+                            <div class="rank-meta">
+                                <span>热门精选</span>
+                                <span>2026</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="回魂唱片" data-keywords="恐怖, 悬疑 都市传说 黑胶 时间循环 诅咒 录音" data-year="2025" data-category="latest">
+                        <a class="rank-number" href="./movie-0013.html">90</a>
+                        <a class="rank-thumb" href="./movie-0013.html">
+                            <img src="./13.jpg" alt="回魂唱片" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0013.html">回魂唱片</a></h3>
+                            <p>一张1978年的绝版黑胶唱片，一旦播放，所有人都会在听到歌声的第42分钟离奇死亡。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="今夜我要控制你的尸首" data-keywords="恐怖 / 黑色喜剧 / 奇幻 通灵 尸体 复仇 巫术 搞笑恐怖" data-year="2025" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0018.html">91</a>
+                        <a class="rank-thumb" href="./movie-0018.html">
+                            <img src="./18.jpg" alt="今夜我要控制你的尸首" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0018.html">今夜我要控制你的尸首</a></h3>
+                            <p>一名蹩脚的降头师受雇控制一具女尸跳舞，却意外发现女尸在夜店里自己站了起来，还点了杯威士忌。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="纸牌人生" data-keywords="剧情， 运动， 传记 魔术 励志 残疾" data-year="2025" data-category="drama">
+                        <a class="rank-number" href="./movie-0020.html">92</a>
+                        <a class="rank-thumb" href="./movie-0020.html">
+                            <img src="./20.jpg" alt="纸牌人生" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0020.html">纸牌人生</a></h3>
+                            <p>天生没有左手手指的男孩，为了实现成为世界级纸牌魔术师的梦想，用无数个日夜发明了独臂切牌与开扇的奇迹手法。</p>
+                            <div class="rank-meta">
+                                <span>剧情佳作</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="水中的女人" data-keywords="奇幻，剧情，悬疑 河流 溺水 重生 水怪 环保" data-year="2025" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0052.html">93</a>
+                        <a class="rank-thumb" href="./movie-0052.html">
+                            <img src="./52.jpg" alt="水中的女人" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0052.html">水中的女人</a></h3>
+                            <p>少女溺水后生还，但她开始每隔七天蜕一层皮，每层皮都会长成一个和她一模一样的女孩，并跳河自尽。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="欲血威尼斯" data-keywords="恐怖 吸血鬼 狂欢节 情色 艺术 惊悚" data-year="2025" data-category="latest">
+                        <a class="rank-number" href="./movie-0085.html">94</a>
+                        <a class="rank-thumb" href="./movie-0085.html">
+                            <img src="./85.jpg" alt="欲血威尼斯" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0085.html">欲血威尼斯</a></h3>
+                            <p>威尼斯狂欢节期间，一名游客发现最顶级的假面舞会上，所有面具揭下都是血。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="雨霖铃" data-keywords="爱情, 古装, 剧情 宋词 绝症 江南 虐恋" data-year="2025" data-category="latest">
+                        <a class="rank-number" href="./movie-0086.html">95</a>
+                        <a class="rank-thumb" href="./movie-0086.html">
+                            <img src="./86.jpg" alt="雨霖铃" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0086.html">雨霖铃</a></h3>
+                            <p>柳永词中的歌女与书生，在现代都市的雨季里反复转世，却从未相守超过一个梅雨季。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="出云之月" data-keywords="历史 / 动作 武士 月食 复仇 能剧" data-year="2025" data-category="family">
+                        <a class="rank-number" href="./movie-0098.html">96</a>
+                        <a class="rank-thumb" href="./movie-0098.html">
+                            <img src="./98.jpg" alt="出云之月" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0098.html">出云之月</a></h3>
+                            <p>月食之夜，一名盲眼能剧乐师凭借听觉连杀十七名武士，只为给三百年前的祖先复仇。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="干将莫邪" data-keywords="奇幻 古装 铸剑 神话 动作" data-year="2025" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0113.html">97</a>
+                        <a class="rank-thumb" href="./movie-0113.html">
+                            <img src="./113.jpg" alt="干将莫邪" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0113.html">干将莫邪</a></h3>
+                            <p>铸剑师夫妇跳炉铸成雌雄双剑，千年后，双剑转世为人，却忘记了彼此。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="我们妈妈的房子" data-keywords="悬疑、惊悚、剧情 遗产阴谋 家庭惊悚 阿兹海默症 多层反转" data-year="2025" data-category="family">
+                        <a class="rank-number" href="./movie-0120.html">98</a>
+                        <a class="rank-thumb" href="./movie-0120.html">
+                            <img src="./120.jpg" alt="我们妈妈的房子" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0120.html">我们妈妈的房子</a></h3>
+                            <p>母亲去世后，四兄妹回到儿时的老宅，却发现患有阿兹海默症的母亲留下的日记里，记录着每个人最不堪的秘密。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="布兰妮：星踪可考" data-keywords="传记 / 悬疑 / 音乐 流行偶像 监护权阴谋 粉丝破案 伪纪录片" data-year="2025" data-category="latest">
+                        <a class="rank-number" href="./movie-0147.html">99</a>
+                        <a class="rank-thumb" href="./movie-0147.html">
+                            <img src="./147.jpg" alt="布兰妮：星踪可考" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0147.html">布兰妮：星踪可考</a></h3>
+                            <p>布兰妮的粉丝们不相信她的社交媒体是本人发的，他们组建了一个线上侦探团，发现了一个涉及娱乐圈顶层的人口控制计划。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="妹妹" data-keywords="悬疑 / 家庭 / 惊悚 失踪 替身 记忆 伦理 反转" data-year="2025" data-category="latest">
+                        <a class="rank-number" href="./movie-0157.html">100</a>
+                        <a class="rank-thumb" href="./movie-0157.html">
+                            <img src="./7.jpg" alt="妹妹" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0157.html">妹妹</a></h3>
+                            <p>失踪十年的妹妹突然回家，但姐姐发现这个“妹妹”不仅没有胎记，甚至知道只有凶手才知道的秘密。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="昂希朗格瓦：电光魅影" data-keywords="纪录片 / 传记 电影史 法国电影资料馆 影迷必看 救片如救火" data-year="2025" data-category="drama">
+                        <a class="rank-number" href="./movie-0172.html">101</a>
+                        <a class="rank-thumb" href="./movie-0172.html">
+                            <img src="./22.jpg" alt="昂希朗格瓦：电光魅影" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0172.html">昂希朗格瓦：电光魅影</a></h3>
+                            <p>一个把后半生都用来“偷电影胶片”的疯子，如何凭一己之力挽救了整个法国电影史。</p>
+                            <div class="rank-meta">
+                                <span>剧情佳作</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="吸血幽灵" data-keywords="恐怖， 历史， 悬疑 哥特 民间传说 心理恐怖" data-year="2025" data-category="suspense">
+                        <a class="rank-number" href="./movie-0207.html">102</a>
+                        <a class="rank-thumb" href="./movie-0207.html">
+                            <img src="./57.jpg" alt="吸血幽灵" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0207.html">吸血幽灵</a></h3>
+                            <p>19世纪西班牙村庄接连有人离奇失血而死，一名不信鬼神的医生前来调查却发现诅咒真实存在。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="大侠谷" data-keywords="动作 / 西部 / 科幻 荒野 机械义体 复仇 荒漠美学" data-year="2025" data-category="action">
+                        <a class="rank-number" href="./movie-0215.html">103</a>
+                        <a class="rank-thumb" href="./movie-0215.html">
+                            <img src="./65.jpg" alt="大侠谷" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0215.html">大侠谷</a></h3>
+                            <p>南北战争退役老兵在西部峡谷发现外星坠舰，他用外星科技改造自己，向屠杀他村庄的匪帮复仇。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="魔法黑森林" data-keywords="奇幻 / 冒险 / 音乐剧 森林冒险 魔法生物 家庭成长" data-year="2025" data-category="action">
+                        <a class="rank-number" href="./movie-0221.html">104</a>
+                        <a class="rank-thumb" href="./movie-0221.html">
+                            <img src="./71.jpg" alt="魔法黑森林" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0221.html">魔法黑森林</a></h3>
+                            <p>十岁男孩意外进入家后面那片会移动的黑森林，发现每个季节都有一个被魔法困住的守林人。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="杀人拼图" data-keywords="悬疑惊悚 连环杀人 记忆碎片 高智商犯罪" data-year="2025" data-category="latest">
+                        <a class="rank-number" href="./movie-0263.html">105</a>
+                        <a class="rank-thumb" href="./movie-0263.html">
+                            <img src="./113.jpg" alt="杀人拼图" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0263.html">杀人拼图</a></h3>
+                            <p>失忆的犯罪心理学教授发现自己每找回一块记忆碎片，现实中就多出一具尸体。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="光影之妓" data-keywords="剧情 / 艺术 / 历史 电影史 默片女星 男性凝视 自我觉醒" data-year="2025" data-category="family">
+                        <a class="rank-number" href="./movie-0285.html">106</a>
+                        <a class="rank-thumb" href="./movie-0285.html">
+                            <img src="./135.jpg" alt="光影之妓" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0285.html">光影之妓</a></h3>
+                            <p>她是默片时代最耀眼的女星，也是片场被所有人“观看”的“妓女”。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="艾希曼的末日" data-keywords="历史剧情 二战 审判 心理博弈 纪实" data-year="2025" data-category="drama">
+                        <a class="rank-number" href="./movie-0314.html">107</a>
+                        <a class="rank-thumb" href="./movie-0314.html">
+                            <img src="./14.jpg" alt="艾希曼的末日" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0314.html">艾希曼的末日</a></h3>
+                            <p>摩萨德特工在阿根廷绑架了艾希曼，在秘密押送以色列的十一天里，审讯员试图唤醒他的人性，却发现那是徒劳。</p>
+                            <div class="rank-meta">
+                                <span>剧情佳作</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="恐惧斗室" data-keywords="悬疑 / 惊悚 密室逃脱 社交游戏 人性实验" data-year="2025" data-category="suspense">
+                        <a class="rank-number" href="./movie-0340.html">108</a>
+                        <a class="rank-thumb" href="./movie-0340.html">
+                            <img src="./40.jpg" alt="恐惧斗室" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0340.html">恐惧斗室</a></h3>
+                            <p>七名网红被邀请参加一档顶级密室逃脱直播秀，却发现每一关淘汰的不是人，而是观众的道德评分。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="非一般床边故事" data-keywords="奇幻, 家庭, 悬疑 绘本 实体化 母女关系 梦境入侵" data-year="2025" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0349.html">109</a>
+                        <a class="rank-thumb" href="./movie-0349.html">
+                            <img src="./49.jpg" alt="非一般床边故事" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0349.html">非一般床边故事</a></h3>
+                            <p>单亲妈妈每晚给女儿讲的原创床边故事，第二天都会在现实中精准发生，包括昨晚那个“会吃说谎者的衣柜”。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="雪茫寻亲" data-keywords="灾难、剧情、亲情 暴风雪 寻子 极寒求生 母爱 真实改编" data-year="2025" data-category="family">
+                        <a class="rank-number" href="./movie-0364.html">110</a>
+                        <a class="rank-thumb" href="./movie-0364.html">
+                            <img src="./64.jpg" alt="雪茫寻亲" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0364.html">雪茫寻亲</a></h3>
+                            <p>五岁儿子在暴风雪中走失，母亲孤身闯入零下四十度的林海雪原，在全网“放弃”的呼声中找到了第97个小时。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="马桶妖怪" data-keywords="恐怖, 喜剧, 奇幻 都市传说 下水道 寄生 恶心萌" data-year="2025" data-category="comedy">
+                        <a class="rank-number" href="./movie-0366.html">111</a>
+                        <a class="rank-thumb" href="./movie-0366.html">
+                            <img src="./66.jpg" alt="马桶妖怪" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0366.html">马桶妖怪</a></h3>
+                            <p>东京出现“马桶诅咒”，只要冲水超过三次，就会从下水道爬出吃人的黏液妖怪。</p>
+                            <div class="rank-meta">
+                                <span>喜剧生活</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="雌狐：大电影" data-keywords="动作, 犯罪, 悬疑 义警 女性主角 连环陷阱 高智商对决 暗黑风格" data-year="2025" data-category="action">
+                        <a class="rank-number" href="./movie-0371.html">112</a>
+                        <a class="rank-thumb" href="./movie-0371.html">
+                            <img src="./71.jpg" alt="雌狐：大电影" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0371.html">雌狐：大电影</a></h3>
+                            <p>白天是画廊策展人，夜晚是猎杀腐败权贵的义警“雌狐”，她却发现自己成了别人棋盘上的猎物。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="法国姑娘" data-keywords="爱情, 喜剧 文化冲突 浪漫 异国 轻喜剧" data-year="2025" data-category="romance">
+                        <a class="rank-number" href="./movie-0376.html">113</a>
+                        <a class="rank-thumb" href="./movie-0376.html">
+                            <img src="./76.jpg" alt="法国姑娘" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0376.html">法国姑娘</a></h3>
+                            <p>一个梦想成为“法式女神”的中国女孩，用一本错漏百出的《巴黎恋爱指南》闯荡巴黎。</p>
+                            <div class="rank-meta">
+                                <span>都市情感</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="懵懵哒爱情" data-keywords="爱情 / 喜剧 / 青春 失忆梗 校园 双向暗恋" data-year="2025" data-category="animation">
+                        <a class="rank-number" href="./movie-0400.html">114</a>
+                        <a class="rank-thumb" href="./movie-0400.html">
+                            <img src="./100.jpg" alt="懵懵哒爱情" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0400.html">懵懵哒爱情</a></h3>
+                            <p>学霸女主因车祸得了“选择性失忆症”，每天醒来都会忘记男主，男主只好天天重新追她一次。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="桃乐丝·罗奇的恐惧" data-keywords="恐怖， 惊悚， 心理 密室 心理崩溃 身体恐怖 独角戏" data-year="2025" data-category="latest">
+                        <a class="rank-number" href="./movie-0401.html">115</a>
+                        <a class="rank-thumb" href="./movie-0401.html">
+                            <img src="./101.jpg" alt="桃乐丝·罗奇的恐惧" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0401.html">桃乐丝·罗奇的恐惧</a></h3>
+                            <p>底层清洁工桃乐丝被困在一间废弃的精神病院盥洗室，镜中的倒影开始自主行动。</p>
+                            <div class="rank-meta">
+                                <span>年度新片</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="铁骑军魂" data-keywords="战争 / 动作 / 历史 骑兵连 抗日战争 硬核战争" data-year="2025" data-category="action">
+                        <a class="rank-number" href="./movie-0458.html">116</a>
+                        <a class="rank-thumb" href="./movie-0458.html">
+                            <img src="./8.jpg" alt="铁骑军魂" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0458.html">铁骑军魂</a></h3>
+                            <p>1939年，一支仅剩32人的八路军骑兵连，为了掩护群众转移，向装备精良的日军联队发起了决死冲锋。</p>
+                            <div class="rank-meta">
+                                <span>动作冒险</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="父亲是棵树" data-keywords="剧情, 家庭 亲情 父爱 农村 成长 催泪" data-year="2025" data-category="family">
+                        <a class="rank-number" href="./movie-0482.html">117</a>
+                        <a class="rank-thumb" href="./movie-0482.html">
+                            <img src="./32.jpg" alt="父亲是棵树" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0482.html">父亲是棵树</a></h3>
+                            <p>一个身患绝症的父亲，为了让叛逆的儿子能撑起一个家，用尽最后三年时间，把自己活成了一棵扎根土地的大树。</p>
+                            <div class="rank-meta">
+                                <span>家庭年代</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="死吻" data-keywords="惊悚 / 悬疑 反转 心理惊悚 连环杀手 黑色电影 女杀手" data-year="2025" data-category="suspense">
+                        <a class="rank-number" href="./movie-0483.html">118</a>
+                        <a class="rank-thumb" href="./movie-0483.html">
+                            <img src="./33.jpg" alt="死吻" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0483.html">死吻</a></h3>
+                            <p>一个专杀连环杀手的女人，在某次任务中吻了目标，却发现自己吻上的是失散多年的亲哥哥。</p>
+                            <div class="rank-meta">
+                                <span>悬疑犯罪</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="潜艇总动员：外星宝贝计划" data-keywords="动画， 喜剧， 科幻 潜艇 外星人 冒险 合家欢" data-year="2025" data-category="animation">
+                        <a class="rank-number" href="./movie-0492.html">119</a>
+                        <a class="rank-thumb" href="./movie-0492.html">
+                            <img src="./42.jpg" alt="潜艇总动员：外星宝贝计划" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0492.html">潜艇总动员：外星宝贝计划</a></h3>
+                            <p>贝贝潜艇在深海发现一只流落地球的紫色外星小章鱼，必须在48小时内帮它修好飞船。</p>
+                            <div class="rank-meta">
+                                <span>动画剧集</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rank-item" data-title="他们回来了" data-keywords="科幻 / 惊悚 克隆 伦理 悬疑" data-year="2025" data-category="fantasy">
+                        <a class="rank-number" href="./movie-0514.html">120</a>
+                        <a class="rank-thumb" href="./movie-0514.html">
+                            <img src="./64.jpg" alt="他们回来了" loading="lazy">
+                        </a>
+                        <div class="rank-info">
+                            <h3><a href="./movie-0514.html">他们回来了</a></h3>
+                            <p>七位牺牲的宇航员突然完好无损地回到家中，但每个人都藏着不可告人的秘密。</p>
+                            <div class="rank-meta">
+                                <span>奇幻科幻</span>
+                                <span>2025</span>
+                                <span>热度 99.8</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <div>
+                <a class="footer-logo" href="./index.html">热门电影大全</a>
+                <p>热门电影大全栏目汇集关注度较高的电影内容，涵盖多类型片单和高清片库。</p>
+            </div>
+            <div class="footer-links">
+                    <a href="./category-hot.html">热门精选</a>
+                    <a href="./category-drama.html">剧情佳作</a>
+                    <a href="./category-suspense.html">悬疑犯罪</a>
+                    <a href="./category-romance.html">都市情感</a>
+                    <a href="./category-comedy.html">喜剧生活</a>
+                    <a href="./category-action.html">动作冒险</a>
+                    <a href="./ranking.html">热播榜</a>
+                    <a href="./search.html">片库检索</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/site.js"></script>
+
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
